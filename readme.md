@@ -46,5 +46,20 @@ flex: 1 0 140px;
 flex: 1 0 50px;
 }
 
+---
+controlled scroll:
+
+.MainPage {
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    position: relative;
+}
+.childDiv {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-gutter: stable;
+}
 --
 
