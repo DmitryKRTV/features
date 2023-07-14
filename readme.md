@@ -1,7 +1,11 @@
 https://www.youtube.com/shorts/Fk-xqmUtYQk - add smooth container appear
 
+---
+
 set env within package.json
 "start": "set PROXY=localhost:3001 && react-scripts start",
+
+---
 
 use proxy
 const {createProxyMiddleware} = require('http-proxy-middleware');
@@ -23,3 +27,24 @@ module.exports = function (app) {
         })
     );
 };
+
+---
+
+flex container: 
+
+.form {
+display: flex;
+flex: wrap;
+}
+.name {
+flex: 1 0 140px;
+}
+.email {
+flex: 1 0 140px;
+}
+.submit {
+flex: 1 0 50px;
+}
+
+--
+
